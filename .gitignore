@@ -1,0 +1,11 @@
+# Ignore all .vscode folders recursively
+.vscode/
+
+# Ignore all .exe files recursively
+*.exe
+
+# Ignore compiled object files, logs, and temp files
+*.o
+*.log
+*.out.vscode/ 
+*.exe 
