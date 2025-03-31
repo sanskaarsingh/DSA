@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int floor(vector<int> &arr, int key)
+int ceil(vector<int> &arr, int key)
 {
     int start = 0, end = arr.size()-1, mid, result;
     while (start<=end)
@@ -63,7 +63,7 @@ int main()
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Only Integers allowed" << endl;
     }
-    int result = floor(arr, key);
+    int result = ceil(arr, key);
     cout << "The ceil of the following element will be " << arr[result] << endl;
     cout << "Press ENTER to exit" << endl;
     cin.ignore();
