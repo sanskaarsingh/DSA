@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int infinite (vector<int> &arr, int key)
+int binary (vector<int> &arr, int key)
 {
     int start = 0, end = 1;
-    while (key > arr[end])
+    while (key >= arr[end])
     {
         start = end;
         end = end + 2;
@@ -40,7 +40,7 @@ int main()
         cout << arr[i] << endl;
     }
   
-    int result = infinite(arr, key);
+    int result = binary(arr, key);
     if (result!=-1)
     {
         cout << "The first 1 lies at " << result + 1 << " position" << endl;
@@ -51,5 +51,4 @@ int main()
     }
     cout << "Press ENTER to exit" << endl;
     cin.ignore();
-    cin.get();
 }
