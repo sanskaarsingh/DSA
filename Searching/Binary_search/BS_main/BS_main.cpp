@@ -42,6 +42,7 @@ int binarysearch(int arr[], int left, int right, int key)
         cout << "Press Enter to Exit" << endl;
         cin.ignore();
         cin.get();
+        return 0;
     }
     else
     {
@@ -49,5 +50,6 @@ int binarysearch(int arr[], int left, int right, int key)
         cout << "Press Enter to Exit";
         cin.ignore();
         cin.get();
+        return 0;
     }
  }

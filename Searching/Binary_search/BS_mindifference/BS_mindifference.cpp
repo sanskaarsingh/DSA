@@ -50,6 +50,12 @@ int main()
             }
         }
     }
+    if (arr.empty())
+    {
+        cout << "No valid input registered, press ENTER to exit" << endl;
+        cin.get();
+        return 0;
+    }
     cout << "Enter the element to find minimum difference of: " << endl;
     while(!(cin>>key))
     {
@@ -77,4 +83,5 @@ int main()
     cout << "Press ENTER to exit" << endl;
     cin.ignore();
     cin.get();
+    return 0;
 }
