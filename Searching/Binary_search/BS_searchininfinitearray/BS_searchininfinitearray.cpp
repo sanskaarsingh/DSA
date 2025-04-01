@@ -58,4 +58,5 @@ int main()
     cout << "Press ENTER to exit" << endl;
     cin.ignore();
     cin.get();
+    return 0;
 }
