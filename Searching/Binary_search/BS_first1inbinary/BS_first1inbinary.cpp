@@ -4,7 +4,7 @@ using namespace std;
 int infinite (vector<int> &arr, int key)
 {
     int start = 0, end = 1;
-    while (key > arr[end])
+    while (key >= arr[end])
     {
         start = end;
         end = end + 2;
