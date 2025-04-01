@@ -45,8 +45,6 @@ int main()
     }
     if (arr.empty())
     {
-        cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "No valid inputs registered" << endl;
         cout << "Press ENTER to exit" << endl;
         cin.get();
