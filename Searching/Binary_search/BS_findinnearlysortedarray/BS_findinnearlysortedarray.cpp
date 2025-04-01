@@ -65,9 +65,9 @@ int main()
     if (arr.empty())
     {
         cout << "No valid inputs registered the array is empty" << endl;
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Press ENTER to exit" << endl;
         cin.get();
+        return 0;
     }
 
     while (!(cin>>key))
@@ -91,5 +91,6 @@ int main()
         cout << "Press ENTER to exit" << endl;
         cin.ignore();
         cin.get();
+        return 0;
     }
 }

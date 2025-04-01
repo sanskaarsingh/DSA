@@ -79,6 +79,7 @@ int main()
         cout << "No Valid Input Found" << endl;
         cout << "Press Enter to exit" << endl;
         cin.get();
+        return 0;
     }
     cout << "Enter the Element to count how many times it exists in the array: " << endl;
     cout << endl;
@@ -98,4 +99,5 @@ int main()
     cout << "Press Enter to Exit";
     cin.get();
     cin.get();
+    return 0;
 }

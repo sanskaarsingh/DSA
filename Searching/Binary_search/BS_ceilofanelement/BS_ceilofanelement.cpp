@@ -50,11 +50,10 @@ int main()
     }
     if (arr.empty())
     {
-        cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "No valid inputs registered" << endl;
         cout << "Press ENTER to exit" << endl;
         cin.get();
+        return 0;
     }
     cout << "Enter the element you have to find the ceil of" << endl;
     while (!(cin>>key))
@@ -68,4 +67,5 @@ int main()
     cout << "Press ENTER to exit" << endl;
     cin.ignore();
     cin.get();
+    return 0;
 }
