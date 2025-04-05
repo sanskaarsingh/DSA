@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <sstream>
-#include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
 int binarysearch(int arr[], int left, int right, int key)
