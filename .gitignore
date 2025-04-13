@@ -3,9 +3,11 @@
 
 # Ignore all .exe files recursively
 *.exe
+*.txt
 
 # Ignore compiled object files, logs, and temp files
 *.o
 *.log
 *.out.vscode/ 
 *.exe 
+*.txt
