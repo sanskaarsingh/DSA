@@ -28,7 +28,7 @@ int main()
 {
     vector<int> arr; string temp;
     int x, key;
-    cout << "Enter the elements of the array, Enter 'done' when you are finished" << endl;
+    cout << "Enter the elements of the array, Enter 'done' when you are finished inputting elements" << endl;
     while (true)
     {
         if (cin>>x)
