@@ -108,11 +108,69 @@ void bm8(int n) //Check Prime
         cout << "NOT PRIME";
     }
 }
+void bm9(int n) //Check Prime but faster
+{
+    int cnt = 0;
+    for (int i=1;i*i<=n;i++)
+    {
+        if (n%i==0 && i!=n)
+        {
+            cnt++;
+            if (n/i!=i)
+            {
+                cnt++;
+            }
+        }
+    }
+    if (cnt==2)
+    {
+        cout << "PRIME";
+    }
+    else
+    {
+        cout << "NOT PRIME";
+    }
+}
+void bm10(int n, int m) //GCD of 2 numbers
+{
+    int gcd=1;
+    for(int i=1; i<= min(m,n); i++)
+    {
+        if (n%i==0 && m%i==0)
+        {
+            gcd = gcd * i;
+        }
+    }
+    cout << gcd;
+}
+void bm11(int n, int m) //GCD of 2 numbers with eucilidean principle
+{
+    while (n>0 && m>0)
+    {
+        if(n>m)
+        {
+            n=n % m;
+        }
+        else
+        {
+            m=m % n;
+        }
+    }
+    if (n==0)
+    {
+        cout << m;
+    }
+    else 
+    {
+        cout << n;
+    }
+}
 
 int main()
 {
-    int n;
+    int n, m;
     cin >> n;
-    bm8(n);
+    cin >> m;
+    bm11(n,m);
     return 0;
 }
