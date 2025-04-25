@@ -89,7 +89,7 @@ int f6(int n) //Sum of first n numbers fucntional way
         return n + f6(n-1);
     }
 }
-int f7(int n)
+int f7(int n) // Facotrial of n functional way
 {
     if (n==1)
     {
