@@ -38,6 +38,22 @@ int sortedornot(vector<int> &arr, int n)
         }
     }
 }
+void removeduplicates(vector<int> &arr, int n)
+{
+    int i = 0;
+    for(int j = 1; j<n; j++)
+    {
+        if (arr[i] != arr[j])
+        {
+            arr[i+1] = arr[j];
+            i++;
+        }
+    }
+    for (int j = 0;j<i;j++)
+    {
+        cout << arr[j] << " ";
+    }
+}
 
 int main()
 {
@@ -50,13 +66,14 @@ int main()
     }
     //int max = largestelement(arr, n);
     //int max = secondlargestelement(arr, n);
-    int max = sortedornot(arr, n);
-    if(max==-1)
-    {
-        cout << "not sorted" << endl;
-    }
-    else
-    {
-        cout << "sorted" << endl;
-    }
+    //int max = sortedornot(arr, n);
+    //if(max==-1)
+    //{
+        //cout << "not sorted" << endl;
+    //}
+    //else
+    //{
+        //cout << "sorted" << endl;
+    //}
+    removeduplicates(arr, n);
 }
